@@ -1,0 +1,50 @@
+.detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 40px;
+}
+.fullDetails {
+  width: 50%;
+  line-height: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10rem;
+  /* align-items: flex-start; */
+}
+.personaldetail label {
+  font-weight: 500;
+  color: indigo;
+  font-size: 1.13rem;
+}
+.personaldetail span {
+  margin-left: 0.6rem;
+  color: #666;
+}
+
+@media screen and (max-width: 800px) {
+  .detail {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    line-height: 0.6rem;
+    padding: 3px 20px;
+  }
+  .fullDetails {
+    padding: 0.4rem;
+  }
+  .personaldetail {
+    display: inline-block;
+  }
+  .personaldetail label {
+    font-size: 0.7rem;
+  }
+  .personaldetail span {
+    margin-left: 0.2rem;
+    font-size: 0.7rem;
+  }
+  .chartDetails {
+  }
+}

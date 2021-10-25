@@ -1,0 +1,67 @@
+.aboutMeContainer {
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.aboutBody {
+  display: flex;
+  align-items: center;
+}
+.aboutImage {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.aboutImage img {
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  object-fit: contain;
+}
+.aboutText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
+  padding: 2rem;
+  color: #666;
+}
+.aboutText blockquote {
+  display: block;
+  /* font-size: 10px; */
+}
+.quote {
+  color: #666;
+}
+.secondQoute {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .aboutMeContainer {
+    height: 100%;
+    padding: 3rem 1rem;
+  }
+  .aboutBody {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .aboutText {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .aboutText blockquote {
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
+  .aboutImage img {
+    width: 14rem;
+    height: 14rem;
+  }
+}

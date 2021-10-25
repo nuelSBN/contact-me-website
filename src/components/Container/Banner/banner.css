@@ -1,0 +1,53 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c0c0c0;
+  height: 100%;
+  padding: 2rem;
+  overflow: hidden;
+}
+.bannerText {
+  font-size: 1.2rem;
+}
+.helloText {
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.helloText > h1 > span {
+  font-weight: 100;
+  font-style: italic;
+  text-transform: lowercase;
+}
+.fullname {
+  font-style: normal;
+  font-weight: 500;
+}
+.bannerImage {
+  display: flex;
+  justify-content: center;
+}
+.bannerImage img {
+  width: 30rem;
+}
+@media screen and (max-width: 800px) {
+  main {
+    display: block;
+  }
+  .helloText {
+    font-size: 0.8rem;
+  }
+  .fullname {
+    font-size: 0.9rem;
+  }
+  .bannerImage img {
+    width: 20rem;
+  }
+  .bannerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
